@@ -1,0 +1,35 @@
+NPR Stories Map
+
+The goal of this app is to show a google maps visualization of npr stories by marking each stories location on a map possibly along with the story title. 
+    
+Obstacles
+
+(Info gathered from logical deductions and research.)
+
+    NPR API
+        How to pull data from npr api.
+            -collection of objects for each story
+            -pull out needed object properties( title, summary, author, summary..etc.)
+            -City Name - npr api does not include city name. Next obstacle inculdes solution for city name. 
+            -Add city name to each story property
+            -Pass stories collection to google maps geolocation to place on map
+        City Name Algotherim
+    Google Maps Api
+        How to create marker with a city name
+            Geolocation
+                What is it and how to implement.
+                More research needed. 
+                
+Iterations 
+
+1. The first iteration will pull in npr api data and list out stories in custom format
+    
+2. Complete research on Google Maps API by reading documentation and placing marker on map using just a city name. 
+
+3. Create City Name Algotherim
+
+4. Add city name to stories colelction and connect collection with geolocation
+
+5. Finalize
+
+    
