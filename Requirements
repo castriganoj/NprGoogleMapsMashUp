@@ -11,9 +11,14 @@ Obstacles
             -collection of objects for each story
             -pull out needed object properties( title, summary, author, summary..etc.)
             -City Name - npr api does not include city name. Next obstacle inculdes solution for city name. 
+==>        City Name Algotherim
+            Loop thru all text in story object
+            Compare each word to array of of city names
+                not sure where to get collection of cit names. 
+            Determine the city for each story
+        Manipulate Data    
             -Add city name to each story property
             -Pass stories collection to google maps geolocation to place on map
-        City Name Algotherim
     Google Maps Api
         How to create marker with a city name
             Geolocation
@@ -23,10 +28,27 @@ Obstacles
 Iterations 
 
 1. The first iteration will pull in npr api data and list out stories in custom format
-    
+        9/12/2015: done. 
+     
 2. Complete research on Google Maps API by reading documentation and placing marker on map using just a city name. 
+        Set up and send geocode request for results that would return red and green results. 
 
 3. Create City Name Algotherim
+     9/13/2015:
+    - Options
+        Create array of us city names and match strings from article to array. Return one with highest count
+        Send a geocode request for each string (preferred)
+    Using 2nd method:
+    - Algotherim Options
+        Return first string that returns green
+        Tags, title, categories,
+         9/14/2015
+         Based on research findings from npr api documentation, use:
+            US and Text arguemnts in api call - http://api.npr.org/query?id=1003&fields=text&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001
+         loop thru text until a positive match is returned from geocode api
+         Set up loop with fake geocode check (i.e. create string var with city name in test article and loop to match) 
+            
+         
 
 4. Add city name to stories colelction and connect collection with geolocation
 
