@@ -45,8 +45,10 @@ Iterations
          9/14/2015
          Based on research findings from npr api documentation, use:
             US and Text arguemnts in api call - http://api.npr.org/query?id=1003&fields=text&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001
-         loop thru text until a positive match is returned from geocode api
+         loop thru text until a positive match is returned from geocode api. 9/17/2015:Create stories object with each story. properties for text, title and empty city name.  
          Set up loop with fake geocode check (i.e. create string var with city name in test article and loop to match) 
+         
+         
             
          
 

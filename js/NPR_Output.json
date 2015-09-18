@@ -1,0 +1,476 @@
+{
+    "version": "0.94",
+    "list": {
+        "title": {
+            "$text": "NPR Topics: U.S."
+        },
+        "teaser": {
+            "$text": "NPR coverage of national news, U.S. politics, elections, business, arts, culture, health and science, and technology. Subscribe to the NPR Nation RSS feed."
+        },
+        "miniTeaser": {},
+        "link": [{
+            "type": "api",
+            "$text": "http://api.npr.org/query?id=1003&meta=inherit&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+        }, {
+            "type": "html",
+            "$text": "http://www.npr.org/sections/us/?ft=nprml&f=1003"
+        }],
+        "story": [{
+            "id": "441284651",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/sections/thetwo-way/2015/09/17/441284651/authorities-search-for-another-possible-victim-in-utah-flash-floods?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441284651&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1KptlaN"
+            }],
+            "title": {
+                "$text": "Authorities Search For Another Possible Victim In Utah Flash Floods"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "A missing man's car was found Wednesday, badly battered, in a flood plain that had been hit by a flash flood. Police in Hurricane, Utah, say Ryan Mertlich may be yet another casualty of severe flooding that is known to have claimed 18 people."
+                }, {
+                    "num": "2",
+                    "$text": "NPR's Howard Berkes reports for the Newscast desk:"
+                }, {
+                    "num": "3"
+                }, {
+                    "num": "4",
+                    "$text": "\"Searchers in Mohave County, Arizona, discovered the Geo Tracker belonging to Ryan Mertlich of Hurricane, Utah, in a dry wash that had carried a flash flood. But there's no sign of Mertlich, who typically travels the remote dirt roads of what is known as the Arizona Strip. A spokeswoman for the Mohave County sheriff says it's obvious that Mertlich's car was carried by a flash flood."
+                }, {
+                    "num": "5",
+                    "$text": "\"The area is close to the Utah border about 15 miles west of Hildale, where a different flash flood Monday killed 12 people and left one missing. It's also far from Zion National Park, where seven hikers died in yet another flash flood.\""
+                }, {
+                    "num": "6"
+                }, {
+                    "num": "7",
+                    "$text": "Mohave County Arizona search teams were on the ground today looking for signs of the man, and Howard says, the search will continue tomorrow."
+                }, {
+                    "num": "8",
+                    "$text": "Mertlich was reported missing on Tuesday after leaving Washington, Utah, and heading home on the remote dirt roads, which he knew well."
+                }, {
+                    "num": "9",
+                    "$text": "Earlier this week, Lt. Gov. Spencer Cox called the floods \"one of the worst weather-related disasters in the history of the state of Utah.\" [Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441223136",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/sections/thetwo-way/2015/09/17/441223136/top-fifa-exec-suspended-after-alleged-world-cup-tickets-scheme?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441223136&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeSzwp"
+            }],
+            "title": {
+                "$text": "Top FIFA Exec Suspended After Alleged World Cup Tickets Scheme"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "FIFA announced today that it has suspended Secretary General Jérôme Valcke \"until further notice,\" following allegations that he was involved in an operation to improperly profit from World Cup ticket sales."
+                }, {
+                    "num": "2",
+                    "$text": "The world soccer governing body also said in the statement said it has requested a formal investigation by FIFA's Ethics Committee."
+                }, {
+                    "num": "3",
+                    "$text": "The allegations against Valcke have been made by a consultant, Benny Alon, who worked for a company that at one point had a contract with FIFA to sell tickets for the 2014 World Cup, according to the Guardian."
+                }, {
+                    "num": "4"
+                }, {
+                    "num": "5",
+                    "$text": "\"Documents seen by the Guardian appear to suggest that Valcke was to be the beneficiary of an agreement to sell the tickets at inflated prices. However the documents are incomplete, selective and could easily be open to other interpretations. One email from the consultant, Benny Alon, apparently sent to Valcke, states in reference to the sale of tickets to group matches at the 2014 World Cup: 'we made US$114,000 each on Germany.' However it has been suggested that no tickets were actually ever sold.\""
+                }, {
+                    "num": "6"
+                }, {
+                    "num": "7",
+                    "$text": "Valcke denies any wrongdoing."
+                }, {
+                    "num": "8",
+                    "$text": "FIFA has been under global pressure for its alleged rampant corruption, which culminated in the indictment of 14 FIFA officials and the arrest of seven in May on charges including bribery, racketeering, money laundering and wire fraud. Valcke was not named in those documents, though he was accused of transferring $10 million as part of an alleged bribe to help South Africa win the right to host the 2010 World Cup. While he was not prosecuted in that instance, these newest allegations were enough to prompt FIFA to put him on leave. This action against Valcke, who was FIFA President Sepp Blatter's right-hand man since 2007, casts further suspicion on Blatter himself who has long been suspected of corruption."
+                }, {
+                    "num": "9",
+                    "$text": "U.S. Attorney General Loretta Lynch also made waves in the soccer world this week when, during a trip to Zurich where FIFA is headquartered, she vowed to bring further charges against entities and individuals in relation to FIFA corruption."
+                }, {
+                    "num": "10"
+                }, {
+                    "num": "11",
+                    "$text": "\"Separate and apart from the pending indictment, our investigation remains active and ongoing. It has in fact expanded since May. The scope of our investigation is not limited and we are following the evidence where it leads. We do anticipate pursuing additional charges against individuals and entities.\""
+                }, {
+                    "num": "12"
+                }, {
+                    "num": "13",
+                    "$text": "Meanwhile, one of the seven officials arrested in May, Eugenio Figueredo, was just approved for extradition to the U.S. today, where he will face charges of accepting millions of dollars worth of bribes relating to South American soccer tournaments. [Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441196546",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441196546/is-there-a-war-on-police-the-statistics-say-no?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441196546&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeIAqT"
+            }],
+            "title": {
+                "$text": "Is There A 'War On Police'? The Statistics Say No"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "The ambush-style murder of Sheriff Deputy Darren Goforth at a gas station in suburban Houston on Aug. 29 has added new urgency to warnings about a growing \"war on cops\" in America. After the arrest of the suspect, an African-American man named Shannon J. Miles, the local district attorney called for more public support for law enforcement."
+                }, {
+                    "num": "2",
+                    "$text": "\"It is time for the silent majority in this country to support law enforcement,\" said Devon Anderson, the Harris County DA. \"There are a few bad apples in every profession. That does not mean there should be open warfare declared on law enforcement.\""
+                }, {
+                    "num": "3",
+                    "$text": "The notion of growing \"warfare\" against police stems in part from a statistical jump in the number of law officers murdered — \"feloniously killed,\" in the jargon of the FBI's numbers."
+                }, {
+                    "num": "4",
+                    "$text": "In 2014, the year of the Ferguson protests and increased media attention on police misconduct, 51 officers were killed nationwide. That was a jump from the 27 killed in 2013 and many took it as a sign of greater danger for police."
+                }, {
+                    "num": "5",
+                    "$text": "Seth Stoughton, a former police officer and an assistant law professor at the University of South Carolina, calls that interpretation \"nonsense.\""
+                }, {
+                    "num": "6",
+                    "$text": "\"It's misleading to compare one year to another year,\" he says."
+                }, {
+                    "num": "7",
+                    "$text": "Stoughton has been collecting and analyzing these data going back decades. He says 2014 looked bad in comparison with 2013 mainly because 2013 was so good."
+                }, {
+                    "num": "8",
+                    "$text": "\"2013 was the safest year for police officers, ever,\" he says. \"The safest year in recorded history.\""
+                }, {
+                    "num": "9",
+                    "$text": "In fact, in the larger scheme of things, 2014 looks pretty normal. The number of murders of police was about the same as 2012, and actually a lot lower than 2011."
+                }, {
+                    "num": "10",
+                    "$text": "The long-term trend is even more encouraging: On average, only about half as many police are murdered every year now, as compared with the 1970s. Stoughton says some of that improvement is probably due to better training, better gear and radically improved trauma care for cops who are shot."
+                }, {
+                    "num": "11",
+                    "$text": "But he says the numbers suggest officers are also facing fewer attacks: The number of assaults on police has also fallen, though not as sharply."
+                }, {
+                    "num": "12",
+                    "$text": "Stoughton says he's not saying police work isn't dangerous — it certainly is. And he also admits we may be seeing a few more ambush killings — cops attacked just because they're cops."
+                }, {
+                    "num": "13",
+                    "$text": "But it's hard to isolate motives in these numbers, and any uptick is probably in the single digits."
+                }, {
+                    "num": "14",
+                    "$text": "\"When we're talking about 780,000 state and local police officers who are interacting with people on 67 million occasions every year, the increase from five to eight, or five to 10 — statistically, it doesn't look significant,\" he says."
+                }, {
+                    "num": "15",
+                    "$text": "But statistical analysis is cold comfort to police officers after a colleague has been ambushed. Some officers have been understandably shaken."
+                }, {
+                    "num": "16",
+                    "$text": "In a video that made the rounds soon after the Texas deputy was killed, a Miami officer named Lydia Marquez records herself in her car."
+                }, {
+                    "num": "17",
+                    "$text": "\"When I kiss my children in the morning before I go to work, I don't know if I'm going to be coming back at the end of the day,\" she says. \"Especially nowadays.\""
+                }, {
+                    "num": "18",
+                    "$text": "Marquez ends her video defiantly, with the phrase that's become a rallying cry for many cops since Ferguson: \"All lives matter. Everyone's life matters.\""
+                }, {
+                    "num": "19",
+                    "$text": "\"All lives matter\" may sound noble, but activists hear it as code for something else."
+                }, {
+                    "num": "20",
+                    "$text": "\"The way that people use the phrase is in direct opposition to 'Black Lives Matter,' \" says Daunasia Yancey, a prominent member of the Black Lives Matter movement in Boston."
+                }, {
+                    "num": "21",
+                    "$text": "\"I think that this 'war on cops' rhetoric is just another way to protect police from accountability,\" she says. \"What they're facing is not violence; it's accountability.\""
+                }, {
+                    "num": "22",
+                    "$text": "Soon after Goforth's murder, Texas Lt. Gov. Dan Patrick condemned what he called the \"negative attitude\" toward police. Accused of using the killing to shut down legitimate criticism of police, Patrick took aim at the media. On the public radio show Texas Standard, the host tried to ask him about all the recent videos showing police misconduct."
+                }, {
+                    "num": "23",
+                    "$text": "\"Your type of interview has to stop,\" Patrick said."
+                }, {
+                    "num": "24",
+                    "$text": "\"Yes, there are people in every profession who cross the line and should be fired,\" he continued. \"Quit focusing on that small percentage of those in law enforcement who have made a mistake.\""
+                }, {
+                    "num": "25",
+                    "$text": "Edward Conlon, a retired New York police detective who writes about police work, says his former colleagues feel unfairly judged by the mistakes of a few. He says they haven't seen evidence of a \"war on cops,\" but they do feel embattled when it comes to public opinion."
+                }, {
+                    "num": "26",
+                    "$text": "\"The notion that there is an epidemic of violence by police is just a really hard thing to swallow,\" he says."
+                }, {
+                    "num": "27",
+                    "$text": "And he sees a parallel here. He thinks both sides are guilty of drawing dramatic conclusions from isolated cases."
+                }, {
+                    "num": "28",
+                    "$text": "\"It's not even half right that cops are at war with black America, and it's not even half right that there's a war on cops, in any big or broad sense,\" Conlon says."
+                }, {
+                    "num": "29",
+                    "$text": "But there does seem to be at least one kind of war going on: a war of perceptions, driven by competing feelings of grievance. [Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441222476",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441222476/gop-candidates-hit-the-campaign-trail-after-2nd-debate?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441222476&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeRF2W"
+            }],
+            "title": {
+                "$text": "GOP Candidates Hit The Campaign Trail After 2nd Debate"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "[Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441160250",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/sections/health-shots/2015/09/17/441160250/what-happens-when-you-get-your-period-in-space?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441160250&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeuqpF"
+            }],
+            "title": {
+                "$text": "What Happens When You Get Your Period In Space?"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "Hundreds of you sent in questions for Skunk Bear's live conversation with three astronauts and NASA's chief scientist on Tuesday. Thanks! The most common question was: \"What happens when you get your period in space?\""
+                }, {
+                    "num": "2",
+                    "$text": "I didn't end up asking them this question because:"
+                }, {
+                    "num": "3"
+                }, {
+                    "num": "4",
+                    "$text": "a) The question itself has a lot of historical baggage;b) The answer is pretty boring."
+                }, {
+                    "num": "5"
+                }, {
+                    "num": "6",
+                    "$text": "But since people were genuinely curious, I decided to answer it here."
+                }, {
+                    "num": "7",
+                    "$text": "First, a little history. In the early days of space flight, menstruation was part of the argument for why women shouldn't become astronauts."
+                }, {
+                    "num": "8",
+                    "$text": "Some claimed that menstruation would affect a woman's ability and blamed several plane crashes on menstruating women. Studies in the 1940s showed this was not the case. Female pilots weren't impaired by their periods. But the idea wouldn't die."
+                }, {
+                    "num": "9",
+                    "$text": "In 1964, researchers from the Women in Space Program still suggested (without evidence) that putting \"a temperamental psychophysiologic human\" (i.e., a hormonal woman) together with a \"complicated machine\" was a bad idea. (Evidently the Soviets struggled with this, too.)"
+                }, {
+                    "num": "10",
+                    "$text": "Others raised concerns about hypothetical health risks."
+                }, {
+                    "num": "11",
+                    "$text": "They feared that microgravity might increase the incidence of \"retrograde menstruation.\" Blood might flow up the fallopian tubes into the abdomen, causing pain and other health problems. No one actually did any experiments to see if this really would be a problem, so there weren't any data to support or refute these fears."
+                }, {
+                    "num": "12",
+                    "$text": "Advocates for women in space argued that there had been a lot of unknowns when humans first went to space, but they sent men up anyway. Rhea Seddon, one of the first six female astronauts at NASA, recalled during an interview:"
+                }, {
+                    "num": "13"
+                }, {
+                    "num": "14",
+                    "$text": "\"We said, 'How about we just consider it a non-problem until it becomes a problem? If anybody gets sick in space you can bring us home. Then we'll deal with it as a problem, but let's consider it a non-problem.' \""
+                }, {
+                    "num": "15"
+                }, {
+                    "num": "16",
+                    "$text": "Just to give you a sense of the culture surrounding female astronauts back then, here's an excerpt of a 1971 NASA report about potential psychological problems in space. Researchers Nick Kanas and William Fedderson suggest there might be a place for women in space:"
+                }, {
+                    "num": "17"
+                }, {
+                    "num": "18",
+                    "$text": "\"The question of direct sexual release on a long-duration space mission must be considered. Practical considerations (such as weight and expense) preclude men taking their wives on the first space flights. It is possible that a woman, qualified from a scientific viewpoint, might be persuaded to donate her time and energies for the sake of improving crew morale; however, such a situation might create interpersonal tensions far more dynamic than the sexual tensions it would release.\""
+                }, {
+                    "num": "19"
+                }, {
+                    "num": "20",
+                    "$text": "Kanas, now a professor emeritus of psychology at the University of California, San Francisco, told me this was tongue-in-cheek — part of a larger discussion about the problem of sexual desire in space.* Still, it's surprising this language was included in an official NASA memorandum."
+                }, {
+                    "num": "21",
+                    "$text": "Even advocates for women in space were caught up in this kind of talk. In a 1975 report for the Rand Corp., Glenda Callanen argues that women have the strength and intelligence to become astronauts. But here's how she begins the report's conclusion:"
+                }, {
+                    "num": "22"
+                }, {
+                    "num": "23",
+                    "$text": "\"It seems inevitable that women are to be essential participants in space flight. Even if they were only to take on the less scientific parts of the space mission, or if they wished only to help 'colonize' distant planets, their basic skills must still prepare them to perform countless new tasks.\""
+                }, {
+                    "num": "24"
+                }, {
+                    "num": "25",
+                    "$text": "In a culture where these statements were unremarkable, it's easy to imagine that questions about menstruation weren't purely motivated by scientific curiosity."
+                }, {
+                    "num": "26",
+                    "$text": "In 1983, 22 years after Alan Shepard became the first American to go to space, Sally Ride left Earth's atmosphere. She told an interviewer:"
+                }, {
+                    "num": "27"
+                }, {
+                    "num": "28",
+                    "$text": "\"I remember the engineers trying to decide how many tampons should fly on a one-week flight; they asked, 'Is 100 the right number?'"
+                }, {
+                    "num": "29",
+                    "$text": "\"No. That would not be the right number.\""
+                }, {
+                    "num": "30"
+                }, {
+                    "num": "31",
+                    "$text": "So what does happen when you get your period in space?"
+                }, {
+                    "num": "32",
+                    "$text": "The same thing that happens on Earth! In the past three decades of female space flight, periods in space have been normal — no menstrual problems in microgravity."
+                }, {
+                    "num": "33",
+                    "$text": "*Kanas and Fedderson's 1971 report went on to state: \"Information regarding women during periods of stress is scanty. This lack, plus previously mentioned problems, will make it difficult for a woman to be a member of the first long-duration space missions. However, it is just as unlikely to think that women cannot adapt to space. Initial exploration parties are historically composed of men, for various cultural and social reasons. Once space exploration by men has been successfully accomplished, then women will follow. In preparation for this, more information should be compiled regarding the physiology and psychology of women under stressful situations.\" [Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441222448",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441222448/as-grapefruit-withers-away-americans-lose-touch-with-the-superfood?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441222448&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeRF2M"
+            }],
+            "title": {
+                "$text": "As Grapefruit Withers Away, Americans Lose Touch With The Superfood"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "[Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441203982",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/sections/thetwo-way/2015/09/17/441203982/federal-government-to-pay-long-overdue-940-million-to-native-american-tribes?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441203982&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeLZ9a"
+            }],
+            "title": {
+                "$text": "Federal Government To Pay Long-Overdue $940 Million To Native American Tribes"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "In the latest of a series of major settlements with Native American tribes, the Obama administration has agreed to pay $940 million for failing to compensate tribes for services that they carried out."
+                }, {
+                    "num": "2",
+                    "$text": "The 25-year-old case involves claims that the government paid tribes less than it had promised under contracts for public services such as education and law enforcement."
+                }, {
+                    "num": "3",
+                    "$text": "Laura Morales reports for NPR's newscast desk:"
+                }, {
+                    "num": "4"
+                }, {
+                    "num": "5",
+                    "$text": "\"This dispute goes back decades. Under the 1975 Indian Self Determination Act, tribes have local control over services like road maintenance, fire and police — but the federal government pays for them. It's all spelled out in contracts. But Assistant Secretary of Indian Affairs Kevin Washburn says sometimes the appropriations weren't enough."
+                }, {
+                    "num": "6",
+                    "$text": "\"'Some kinks have taken a while to work out. For several years Congress did not appropriate enough money for all the contract costs that we were required by statute to pay,' he said. 'That sometimes created a gap between what we promised to pay and what we actually paid.'\""
+                }, {
+                    "num": "7"
+                }, {
+                    "num": "8",
+                    "$text": "The Supreme Court ruled in favor of the tribes in 2012, but the settlement terms must still be approved in U.S. District Court."
+                }, {
+                    "num": "9",
+                    "$text": "There have been several other massive class-action lawsuits settled between Native American tribes and the federal government in recent years. In 2010, the government paid $3.4 billion over royalties owed to generations of individual Indian landowners, according to the Associated Press. And last year, the Obama administration settled with Navajo Nation leaders to the tune of $554 million over the mismanagement of resources on its 27,000-square-mile reservation. [Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441222427",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441222427/what-is-donald-trumps-appeal-to-voters-he-represents-their-anger?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441222427&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeREMh"
+            }],
+            "title": {
+                "$text": "What Is Donald Trump's Appeal To Voters? He Represents Their Anger."
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "[Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441222399",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441222399/federal-reserve-decides-not-to-raise-interest-rates?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441222399&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeRBAd"
+            }],
+            "title": {
+                "$text": "Federal Reserve Decides Not To Raise Interest Rates"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "[Copyright 2015 NPR]"
+                }]
+            }
+        }, {
+            "id": "441222483",
+            "link": [{
+                "type": "html",
+                "$text": "http://www.npr.org/2015/09/17/441222483/predictit-lets-investors-buy-and-sell-political-candidate-stock?ft=nprml&f=1003"
+            }, {
+                "type": "api",
+                "$text": "http://api.npr.org/query?id=441222483&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+            }, {
+                "type": "short",
+                "$text": "http://n.pr/1MeRHrE"
+            }],
+            "title": {
+                "$text": "PredictIt Lets Investors Buy And Sell Political Candidate Stock"
+            },
+            "text": {
+                "paragraph": [{
+                    "num": "1",
+                    "$text": "[Copyright 2015 NPR]"
+                }]
+            }
+        }]
+    }
+}
