@@ -11,20 +11,17 @@ Obstacles
             -collection of objects for each story
             -pull out needed object properties( title, summary, author, summary..etc.)
             -City Name - npr api does not include city name. Next obstacle inculdes solution for city name. 
-==>        City Name Algotherim
+        City Name Algotherim
             Loop thru all text in story object
             Compare each word to array of of city names
                 not sure where to get collection of cit names. 
-            Determine the city for each story
+==>         Determine the city for each story
         Manipulate Data    
-            -Add city name to each story property
-            -Pass stories collection to google maps geolocation to place on map
-    Google Maps Api
-        How to create marker with a city name
-            Geolocation
-                What is it and how to implement.
-                More research needed. 
-                
+            -Run Gelolcation. send string and return pass fail message
+            -if pass, assign passed string to city name storyObj prop.
+            -how to get coords for placement on map? 
+            -
+
 Iterations 
 
 1. The first iteration will pull in npr api data and list out stories in custom format
@@ -45,14 +42,14 @@ Iterations
          9/14/2015
          Based on research findings from npr api documentation, use:
             US and Text arguemnts in api call - http://api.npr.org/query?id=1003&fields=text&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001
-         loop thru text until a positive match is returned from geocode api. 9/17/2015:Create stories object with each story. properties for text, title and empty city name.  
-         Set up loop with fake geocode check (i.e. create string var with city name in test article and loop to match) 
+         loop thru text until a positive match is returned from geocode api. Create stories object with each story. properties for text, title and empty city name.  
+         9/24/2015: 
+            -Previos approach was not working. Geocoding approximates the search so it was returning results for words not realted to the stories location or a location at all like 'wednesday'.
+            -New approach is to create word counts for the tag names. Then send word with highest count to geocode. 
+                Began testing. Doesen't seem to work with title. Story about police stats runied it. No locations in title. This may work if the tag names were available but they dont seem to be. 
+                
          
-         
-            
-         
-
-4. Add city name to stories colelction and connect collection with geolocation
+4. Send each stirng to geolocation and check for match. 
 
 5. Finalize
 
