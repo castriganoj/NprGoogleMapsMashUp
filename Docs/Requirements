@@ -46,8 +46,9 @@ Iterations
          9/24/2015: 
             -Previos approach was not working. Geocoding approximates the search so it was returning results for words not realted to the stories location or a location at all like 'wednesday'.
             -New approach is to create word counts for the tag names. Then send word with highest count to geocode. 
-                Began testing. Doesen't seem to work with title. Story about police stats runied it. No locations in title. This may work if the tag names were available but they dont seem to be. 
-                
+                Began testing. Doesen't seem to work with title. No locations in title. This may work if the tag names were available but they dont seem to be. 
+         9/28/2015
+            -use 4th algotherim method in Docs/npt_api)notes.txt. 
          
 4. Send each stirng to geolocation and check for match. 
 

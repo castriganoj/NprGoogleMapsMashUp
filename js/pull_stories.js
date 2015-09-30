@@ -1,71 +1,53 @@
   /*var nprUrl = "https://api.npr.org/query?fields=title,storyDate,text,listText&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
 
-        //$.getJSON( nprUrl, function( data ) {
+          //$.getJSON( nprUrl, function( data ) {
 
-        var items = [];
-        $.each(data.list.story, function(key, val) {
-          items.push(
-            "<li id='" + key + "'>" + "<ul>" +
-            "<li> Title: " +
-            val.title.$text +
-            "</li>" +
-            "<li> Text: " +
-            val.text.paragraph[0].$text +
-            "</li>" +
-            "<li> Link: " +
-            val.link[0].$text +
-            "</li>" +
-            "<li> Date: " +
-            val.storyDate.$text +
-            "</li>" +
-            "</ul>" +
-            "</li>" +
-            "");
+          var items = [];
+          $.each(data.list.story, function(key, val) {
+            items.push(
+              "<li id='" + key + "'>" + "<ul>" +
+              "<li> Title: " +
+              val.title.$text +
+              "</li>" +
+              "<li> Text: " +
+              val.text.paragraph[0].$text +
+              "</li>" +
+              "<li> Link: " +
+              val.link[0].$text +
+              "</li>" +
+              "<li> Date: " +
+              val.storyDate.$text +
+              "</li>" +
+              "</ul>" +
+              "</li>" +
+              "");
+          });
+
+          $("<ol/>", {
+            "class": "my-new-list",
+            html: items.join("")
+          }).appendTo("#StoriesArea");
+
         });
-
-        $("<ol/>", {
-          "class": "my-new-list",
-          html: items.join("")
-        }).appendTo("#StoriesArea");
-
-      });
-      */
+        */
 
   $(document).ready(function() {
+    var map;
+
+    function initialize() {
+      map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 12,
+        center: {
+          lat: -34.397,
+          lng: 150.644
+        }
+      });
+    }
+    
+  var geocoder = new google.maps.Geocoder();
+    
     $(JsonGetter.pullFile);
-
-    var geocoder = new google.maps.Geocoder();
-
-    /* ****Under Construction
-          var x = "john jay high school";
-          loop: for (var i = 0; i < x.length; i++) {
-              geocoder.geocode({   
-                "address": x,
-                'componentRestrictions': {
-                  'country': "US",
-                }
-              }, function(results, status) {
-                  if (status == google.maps.GeocoderStatus.OK) {
-                      console.log(results);
-                  }
-                  else {
-                      console.log("fail");
-                  }
-              });
-          }
-          
-          var map;
-          
-          function initialize() {
-            map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom: 12,
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                }
-            });
-          }
-    */
+        
   });
 
   //capitalize a string
@@ -73,10 +55,11 @@
     return this.charAt(0).toUpperCase() + this.slice(1);
   }
 
-  function storyObj(title, text, cityName) {
+  function storyObj(title, text, cityName, location) {
     this.title = title;
     this.text = text;
     this.cityName = cityName;
+    this.location = location;
   }
 
 
@@ -137,7 +120,7 @@
       abbreviation: 'AK'
     }, {
       name: 'AMERICAN SAMOA',
-      abbreviation: 'AS'
+      //abbreviation: 'AS' **picking up the word as..case sensititive
     }, {
       name: 'ARIZONA',
       abbreviation: 'AZ'
@@ -266,7 +249,7 @@
       abbreviation: 'PA'
     }, {
       name: 'PUERTO RICO',
-      abbreviation: 'PR'
+      //abbreviation: 'PR' ***pr is being picked up by npr
     }, {
       name: 'RHODE ISLAND',
       abbreviation: 'RI'
@@ -315,30 +298,67 @@
 
         console.log("*****" + stories[i].title + "*****")
         count = 0;
+        highCountState = "";
         for (j in StateFinder.usStates) {
 
           stateNameCount = stories[i].text.split(StateFinder.usStates[j].name.toLowerCase().capitalize()).length - 1
           stateAbbrCount = stories[i].text.split(StateFinder.usStates[j].abbreviation).length - 1
 
-          if ((stateNameCount + stateAbbrCount) > 0) {
+          sum = 0;
+          sum = stateAbbrCount + stateNameCount;
 
-            if (stateNameCount + stateAbbrCount > count)
+          if ((sum) > 0) {
+
+            if (sum > count) // set first high state cout
             {
               highCountState = StateFinder.usStates[j].name;
               count = stateNameCount + stateAbbrCount;
             }
 
-            console.log(StateFinder.usStates[j].name + ": Found state name and abbreviation " + stateNameCount + stateAbbrCount + " times.");
+            console.log(highCountState + ": Found state name and abbreviation " + sum + " times.");
           }
         }
 
-        console.log(highCountState + " : " + count);
+        if (highCountState == "") {
+          console.log("no state found");
+        }
+        else {
+          console.log(highCountState + " : " + count);
+          stories[i].cityName = highCountState;
+          stories[i].location = GetGeocode.getGeocode(highCountState)
+        }
+          
       }
     }
   }
-
-
-
-  //pass cityName back to storyObj along with long and lat for placement on map
+  
+var GetGeocode = {
+  
+    geo: function(){
+    var geocoder = new google.maps.Geocoder();
+    }
+  
+  ,getGeocode: function(city){
+    
+     GetGeocode.geo
+     
+     var geocoder = new google.maps.Geocoder();
+    
+      geocoder.geocode({
+        "address": city  ,
+        'componentRestrictions': {
+          'country': "US",
+        }
+      }, function(results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          return results[0];
+        }
+        else {
+          console.log("fail");
+        }
+      });
+  }
+}
+    //pass cityName back to storyObj along with long and lat for placement on map
 
   // add marker to map with long and lat, at text to marker with city name and story title.

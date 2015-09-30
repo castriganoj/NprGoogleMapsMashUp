@@ -44,6 +44,7 @@ Count state name like Algotherm 2 but also count state abbr. Use obj with state 
 unsuccessful. similar results to name search
 more positive results with more recent sample set. NPR returns pr for puerto rico. need to use regex for pericse lettering.
  9/26/2015: moving on with this version for now
+  9/28/2015: Still working on counts. doubling right now. Highcount in place. 
 
 Algotherm 4
 Count words with capital letters and count their occurrence. Count 1 and 2 letter words. 
