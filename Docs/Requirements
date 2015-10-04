@@ -49,6 +49,8 @@ Iterations
                 Began testing. Doesen't seem to work with title. No locations in title. This may work if the tag names were available but they dont seem to be. 
          9/28/2015
             -use 4th algotherim method in Docs/npt_api)notes.txt. 
+         9/30/2015:
+            -Need to review geolocation request. Pass results to location property in stories object. 
          
 4. Send each stirng to geolocation and check for match. 
 
