@@ -1,35 +1,35 @@
   /*var nprUrl = "https://api.npr.org/query?fields=title,storyDate,text,listText&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
 
-              //$.getJSON( nprUrl, function( data ) {
+                    //$.getJSON( nprUrl, function( data ) {
 
-              var items = [];
-              $.each(data.list.story, function(key, val) {
-                items.push(
-                  "<li id='" + key + "'>" + "<ul>" +
-                  "<li> Title: " +
-                  val.title.$text +
-                  "</li>" +
-                  "<li> Text: " +
-                  val.text.paragraph[0].$text +
-                  "</li>" +
-                  "<li> Link: " +
-                  val.link[0].$text +
-                  "</li>" +
-                  "<li> Date: " +
-                  val.storyDate.$text +
-                  "</li>" +
-                  "</ul>" +
-                  "</li>" +
-                  "");
-              });
+                    var items = [];
+                    $.each(data.list.story, function(key, val) {
+                      items.push(
+                        "<li id='" + key + "'>" + "<ul>" +
+                        "<li> Title: " +
+                        val.title.$text +
+                        "</li>" +
+                        "<li> Text: " +
+                        val.text.paragraph[0].$text +
+                        "</li>" +
+                        "<li> Link: " +
+                        val.link[0].$text +
+                        "</li>" +
+                        "<li> Date: " +
+                        val.storyDate.$text +
+                        "</li>" +
+                        "</ul>" +
+                        "</li>" +
+                        "");
+                    });
 
-              $("<ol/>", {
-                "class": "my-new-list",
-                html: items.join("")
-              }).appendTo("#StoriesArea");
+                    $("<ol/>", {
+                      "class": "my-new-list",
+                      html: items.join("")
+                    }).appendTo("#StoriesArea");
 
-            });
-            */
+                  });
+                  */
 
   $(document).ready(function() {
 
@@ -43,7 +43,7 @@
     // }
 
     $(JsonGetter.pullFile);
-    var stories= [];
+    var stories = [];
 
   });
 
@@ -322,66 +322,80 @@
         else {
           console.log(highCountState + " : " + count);
           stories[i].cityName = highCountState;
-          
+
           //set location
           GetGeocode.Coordinates(highCountState, stories[i])
-          
-          //place marker
-          GetGeocode.PlaceMarkers()
-          
-        
+
+
         }
 
       }
+      //place marker
+      // GetGeocode.PlaceMarkers(stories)
     }
   }
 
   var GetGeocode = {
-   //add coordinates to stories objects. 
-   
-        Coordinates: function(city, story) {
+      //add coordinates to stories objects. 
+
+      Coordinates: function(city, story) {
 
         geocoder = new google.maps.Geocoder();
-        
-        GetGeocode.getCoordinates(city, function(coords){
-          story.location = coords
+
+        GetGeocode.getCoordinates(city, function(coords) {
+
+          story.location = coords;
+          // possibly add markers array here then add to map 
+          var position = new google.maps.LatLng(coords.J, coords.M);
+          marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            
           })
-        
-        
-}
-      
-        ,getCoordinates:  function (city, callback){
-        var coordinates;
-        
-            geocoder.geocode({
-              'address': city
-            }, function(results, status) {
-              if (status === google.maps.GeocoderStatus.OK){
-                coordinates = results[0].geometry.location;
-                callback(coordinates);
-              }
-              else {
-                alert('Geocode was not successful for the following reason: ' + status);
-              }
-            });
-          }
-        
-        ,PlaceMarkers: function (){
           
-           // Loop through our array of markers & place each one on the map  
-    for( i = 0; i < stories.length; i++ ) {
-        var position = new google.maps.LatLng(stories[i].location.L, stories[i].location.H);
-        bounds.extend(position);
-        marker = new google.maps.Marker({
+         marker.info = new google.maps.InfoWindow({
+            content: '<b>' + story.title + '</b> <i>' + story.cityName + '</i>'
+          });
+          
+          google.maps.event.addListener(marker, 'click', function() {
+            var marker_map = this.getMap();
+            this.info.open(marker_map, this);
+          });
+
+
+        })
+      },
+      getCoordinates: function(city, callback) {
+        var coordinates;
+
+        geocoder.geocode({
+          'address': city
+        }, function(results, status) {
+          if (status === google.maps.GeocoderStatus.OK) {
+            coordinates = results[0].geometry.location;
+            callback(coordinates);
+          }
+          else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+
+      ,
+      PlaceMarkers: function(stories) {
+
+        // create an array of markers
+        for (i = 0; i < stories.length; i++) {
+          var position = new google.maps.LatLng(stories[i].location.L, stories[i].location.H);
+          marker = new google.maps.Marker({
             position: position,
             map: map,
             //title: markers[i][0]
-        });
+          });
         }
-          // for markers ....
-          //var map = new google.maps.Map(document.getElementById('map')
-        }
-  }
-        //pass cityName back to storyObj along with long and lat for placement on map
-
-      // add marker to map with long and lat, at text to marker with city name and story title.
+        // for markers ....
+        //var map = new google.maps.Map(document.getElementById('map')
+      }
+    }
+    //pass cityName back to storyObj along with long and lat for placement on map
+    // add marker to map with long and lat, at text to marker with city name and story title.

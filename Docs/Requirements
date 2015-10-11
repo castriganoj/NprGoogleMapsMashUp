@@ -15,9 +15,9 @@ Obstacles
             Loop thru all text in story object
             Compare each word to array of of city names
                 not sure where to get collection of cit names. 
-==>         Determine the city for each story
+     Determine the city for each story
         Manipulate Data    
-            -Run Gelolcation. send string and return pass fail message
+==>                -Run Gelolcation. send string and return pass fail message
             -if pass, assign passed string to city name storyObj prop.
             -how to get coords for placement on map? 
             -
@@ -51,6 +51,10 @@ Iterations
             -use 4th algotherim method in Docs/npt_api)notes.txt. 
          9/30/2015:
             -Need to review geolocation request. Pass results to location property in stories object. 
+         10/1/2015:
+            -stories object now has coordiantes in location property
+         10/9/2015:
+            -
          
 4. Send each stirng to geolocation and check for match. 
 
