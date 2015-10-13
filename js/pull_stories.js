@@ -350,6 +350,10 @@
             var marker_map = this.getMap();
             this.info.open(marker_map, this);
           });
+          
+         // CreateGlosary(function(){
+            $()
+        //  }
 
 
         })
