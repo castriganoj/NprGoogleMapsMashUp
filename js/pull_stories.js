@@ -33,15 +33,6 @@
 
   $(document).ready(function() {
 
-    // function initMap() {
-    //   // Create a map object and specify the DOM element for display.
-    //   var map = new google.maps.Map(document.getElementById('map'), {
-    //     center: {lat: -34.397, lng: 150.644},
-    //     scrollwheel: false,
-    //     zoom: 8
-    //   });
-    // }
-
     $(JsonGetter.pullFile);
     var stories = [];
 
@@ -61,11 +52,10 @@
 
 
   var JsonGetter = {
-
     //get json file
     pullFile: function() {
-      $.getJSON("js/NPR_Output.json", function(json) {
-        var data = json;
+      var nprUrl = "https://api.npr.org/query?fields=title,storyDate,text,listText&dateType=story&output=JSON&apiKey=MDE4OTM0NDk1MDE0Mjk3MDg1MDFhYjFiMg001"
+      $.getJSON( nprUrl, function( data ) {
         JsonGetter.getData(data);
       });
     }
@@ -336,17 +326,16 @@
   }
 
   var GetGeocode = {
-      //add coordinates to stories objects. 
 
       Coordinates: function(city, story) {
 
         geocoder = new google.maps.Geocoder();
 
         GetGeocode.getCoordinates(city, function(coords) {
-
+          
           story.location = coords;
-          // possibly add markers array here then add to map 
-          var position = new google.maps.LatLng(coords.J, coords.M);
+          
+          var position = new google.maps.LatLng(coords[0], coords[1]);
           marker = new google.maps.Marker({
             position: position,
             map: map,
@@ -372,8 +361,13 @@
           'address': city
         }, function(results, status) {
           if (status === google.maps.GeocoderStatus.OK) {
-            coordinates = results[0].geometry.location;
-            callback(coordinates);
+            
+            coordinatesArray = [];
+            
+            coordinatesArray.push(results[0].geometry.location.lat());
+            coordinatesArray.push(results[0].geometry.location.lng());
+
+            callback(coordinatesArray);
           }
           else {
             alert('Geocode was not successful for the following reason: ' + status);
