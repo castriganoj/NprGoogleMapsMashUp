@@ -15,13 +15,20 @@ Obstacles
             Loop thru all text in story object
             Compare each word to array of of city names
                 not sure where to get collection of cit names. 
-     Determine the city for each story
+    Determine the city for each story
         Manipulate Data    
-==>                -Run Gelolcation. send string and return pass fail message
+         -Run Gelolcation. send string and return pass fail message 
             -if pass, assign passed string to city name storyObj prop.
             -how to get coords for placement on map? 
-            -
-
+            
+        *Final  10/18/2015
+            -Algotherim looks for the state name instead of cityName - algotherim strageties are documwented in npr_stories_map/npr_api_notes.txt
+            -StateFinder assigns state to stateName prop
+            -StateFinder calls GetGeocode.Coordinates to assign coordinates to location property
+            -Coordinates takes a city and story object and calls google geocoder object and returns call back 
+            -Geocoder puts the lat and long into CoordinatesArray and passes to call back function
+            -Callback sets location prop with coords and places markers for each story and story title in info window. 
+            
 Iterations 
 
 1. The first iteration will pull in npr api data and list out stories in custom format
@@ -57,7 +64,7 @@ Iterations
             -
          
 4. Send each stirng to geolocation and check for match. 
-
+ - done  10/17/2015
 5. Finalize
-
+ - Need to adjust UI for codepen 
     
