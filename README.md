@@ -6,3 +6,4 @@ This front end app uses javascript to call the npr api and return the current da
 
 This is an ongoing project. The final product will have a more reliable and percise way to assign a location. The UI will also allow for story topic filtering and date options. and there will be an area to read articles and link to the article at npr.org. 
 
+-update readme test
